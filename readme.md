@@ -35,7 +35,7 @@ export const Reducer = (state, action) => {
 
 ``` sh
 export const ReduxConfig={
-  LiveLearning:{
+  ConfigModule:{
     data:["banner","recommend","page"],
     condition:{
       orgId: ""
