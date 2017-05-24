@@ -11,6 +11,7 @@ import the plugin and the use the reduxGenerator function to generate reducers a
 
 #### reducer file 
 
+``` sh
 import { combineReducers } from 'redux';
 //import redux generator
 import znReduxSuperFetch from "znReduxSuperFetch"; 
@@ -28,10 +29,11 @@ export const Reducer = (state, action) => {
   const cbr = combineReducers({...GenByConfig.Reducers});
   return cbr(state, action);
 };
-
+```
 
 #### config file 
 
+``` sh
 export const ReduxConfig={
   LiveLearning:{
     data:["banner","recommend","page"],
@@ -40,7 +42,7 @@ export const ReduxConfig={
     }
   }
 }
-
+```
 #### domo
 [generate-redux-code](https://github.com/fomenyesu/generate-redux-code)
 
